@@ -1,4 +1,4 @@
-## Ideas on how to check for animated humanoid meshes in Blender
+## Ideas on how to check for animated humanoid mesh in Blender
 
 To determine if an animated mesh is humanoid, we can examine its structure and look for features that are typically associated with humanoids. A general approach might include:
 
