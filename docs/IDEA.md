@@ -1,3 +1,5 @@
+## Ideas on how to check for animated humanoid meshes in Blender
+
 To determine if an animated mesh is humanoid, we can examine its structure and look for features that are typically associated with humanoids. A general approach might include:
 
 1. **Skeleton Structure**: Check if the mesh has a skeleton, and if so, whether the skeleton has joints or bones that match typical humanoid naming conventions or structures (e.g., head, arms, legs).
@@ -12,5 +14,4 @@ Here's a high-level overview of the steps we'll take:
 - [x] If the skeleton is humanoid, confirm by checking the mesh topology.
 - [x] Optionally, check the animations if present.
 
-## Importing the FBX File
 
