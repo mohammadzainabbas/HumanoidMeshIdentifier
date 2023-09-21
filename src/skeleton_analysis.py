@@ -1,7 +1,10 @@
 import bpy
-from typing import List, Tuple, Union, Dict, Any, Boolean
+from typing import List, Tuple, Union, Dict, Any
 
 def check_humanoid_skeleton(objects: Any) -> bool:
+    """
+    Note: This approach primarily checks for the presence of bones typically associated with humanoid figures. It's not foolproof, but it's a good starting point. Advanced methods might involve more detailed mesh analysis, motion capture data analysis, or even machine learning models trained on a variety of humanoid and non-humanoid figures.
+    """
     # Define a list of common humanoid bone names or parts
     humanoid_bones = ['head', 'neck', 'spine', 'arm', 'hand', 'leg', 'foot', 'hip', 'thigh', 'calf']
 
@@ -35,3 +38,7 @@ def check_humanoid_skeleton(objects: Any) -> bool:
     is_humanoid = all(any(bone in name for bone in humanoid_bones) for name in bone_names)
 
     print(f"{is_humanoid = }")
+
+    # If True, mesh has a recognizable humanoid skeleton.
+    # If False, mesh either doesn't have a recognizable humanoid skeleton or lacks one entirely.
+    return is_humanoid # we optimise this by returning early if we find a match 

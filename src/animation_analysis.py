@@ -3,7 +3,7 @@ from typing import List, Tuple, Union, Dict, Any
 
 def check_humanoid_animation(object: Any) -> bool:
     """
-    
+    Note: This script checks each animation action for keyframes that move bones typically associated with humanoid figures. If it finds such keyframes, it assumes that the animation is humanoid.
     """
     # Check if the object has animation data
     if object.animation_data:

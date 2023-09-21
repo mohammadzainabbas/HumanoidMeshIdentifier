@@ -27,17 +27,17 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.fbx(filepath="path_to_your_character.fbx")
 ```
 
-### 1. Check the Skeleton Structure
+### 2. Check the Skeleton Structure
 
-Refer to the provided Python script for Blender to check the skeleton structure.
+Refer to [`check_humanoid_skeleton`]() method to check the skeleton structure.
 
 ### 1. Check the Mesh Topology
 
-Refer to the provided Python script for Blender to perform various checks on mesh topology.
+Refer to [`check_humanoid_mesh`]() method to perform various checks on mesh topology.
 
 ### 1. Check the Animations
 
-Refer to the provided Python script for Blender to analyze the animation of the mesh.
+Refer to [`check_humanoid_animation`]() method to analyze the animation of the mesh.
 
 ### 1. Test the Script
 
