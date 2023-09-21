@@ -6,7 +6,7 @@ This project aims to assess if an animated mesh is humanoid by examining its str
 
 Humanoids can vary greatly, and a more complex solution could involve machine learning or deep analysis of mesh vertices and their movements. This project aims to provide a simple solution that can be used as a starting point for more complex solutions.
 
-Check the ideas document for more details: [docs/IDEA.md](https://github.com/mohammadzainabbas/HumanoidMeshIdentifier/blob/main/docs/IDEA.md).
+Check the ideas document for more details: [docs/IDEAS.md](https://github.com/mohammadzainabbas/HumanoidMeshIdentifier/blob/main/docs/IDEAS.md).
 
 ## Requirements
 
@@ -27,19 +27,19 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.fbx(filepath="path_to_your_character.fbx")
 ```
 
-### 1. Check the Skeleton Structure
+### 2. Check the Skeleton Structure
 
-Refer to the provided Python script for Blender to check the skeleton structure.
+Refer to [`check_humanoid_skeleton`](https://github.com/mohammadzainabbas/HumanoidMeshIdentifier/blob/main/src/skeleton_analysis.py#L4-L44) method to check the skeleton structure.
 
-### 1. Check the Mesh Topology
+### 3. Check the Mesh Topology
 
-Refer to the provided Python script for Blender to perform various checks on mesh topology.
+Refer to [`check_humanoid_mesh`](https://github.com/mohammadzainabbas/HumanoidMeshIdentifier/blob/main/src/mesh_analysis.py#L5-L40) method to perform various checks on mesh topology.
 
-### 1. Check the Animations
+### 4. Check the Animations
 
-Refer to the provided Python script for Blender to analyze the animation of the mesh.
+Refer to [`check_humanoid_animation`](https://github.com/mohammadzainabbas/HumanoidMeshIdentifier/blob/main/src/animation_analysis.py#L4-L41) method to analyze the animation of the mesh.
 
-### 1. Test the Script
+### 5. Test the Script
 
 ```bash
 blender -b -P src/main.py
